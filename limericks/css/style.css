@@ -1,7 +1,6 @@
-/* Add the following selectors and declarations to your external CSS page */
 
 body {
-    background-color: blueviolet; /* Change the color to your desired background color */
+    background-color: blueviolet; 
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -20,7 +19,7 @@ p {
 }
 
 #theend {
-    color: blue; /* Change the color to your desired color */
+    color: blue; 
 }
 
 div {
