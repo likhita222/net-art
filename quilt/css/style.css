@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  .container {
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .square {
+    width: calc(20% - 10px);
+    height: calc(25% - 10px);
+    margin: 5px;
+    background-color: #FF7F50;
+  }
+  
+  .rectangle {
+    width: calc(40% - 10px);
+    height: calc(25% - 10px);
+    margin: 5px;
+    background-color: #40E0D0; 
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #9370DB; 
+    margin: 5px;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #FFFACD; 
+    margin: 5px;
+  }
+  
+  .rhombus {
+    width: 100px;
+    height: 100px;
+    background-color: #B0E0E6; 
+    transform: rotate(45deg);
+    margin: 5px;
+    position: relative;
+  }
+  .rhombus:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 50px solid transparent;
+    border-left-color: #B0E0E6; 
+  }
+  .rhombus:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 50px solid transparent;
+    border-right-color: #B0E0E6; 
+  }
+  
+  .parallelogram {
+    width: 120px;
+    height: 100px;
+    background-color: #F08080; 
+    margin: 5px;
+    transform: skew(20deg);
+  }
+  
+  .hexagon {
+    width: 100px;
+    height: 55px;
+    background-color: #7FFFD4; 
+    margin: 5px;
+    position: relative;
+  }
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+  }
+  .hexagon:before {
+    bottom: 100%;
+    border-bottom: 27.5px solid #7FFFD4;
+  }
+  .hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 27.5px solid #7FFFD4;
+  }
