@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&display=swap');
+
+/* Global Resets */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Base styles */
+body {
+    font-family: 'Courier Prime', monospace; /* Typewriter-style font */
+    font-style: normal; /* Override any previous italic styling */
+    background-color: #f5f0de; /* Light brown beige background */
+    color: white; /* White text color */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    text-align: center; /* Center-align text for a more elegant look */
+    transition: background 0.5s ease-in-out; /* Smooth background transition */
+}
+
+/* Headers */
+h1 {
+    font-size: 2.5em; /* 40px if base is 16px */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Shadow for better contrast */
+    margin: 0.67em 0; /* Spacing above and below */
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.25em; /* 20px if base is 16px */
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Shadow for better contrast */
+    margin-bottom: 1em; /* Spacing below paragraphs */
+}
+
+/* Links (Buttons) */
+a {
+    display: inline-block; /* Needed for padding and margins to work */
+    padding: 0.5em 1em; /* Top & Bottom, Right & Left */
+    margin-top: 1em;
+    background-color: white; /* White button background */
+    color: #333; /* Dark text for the button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.25em; /* Larger font size for buttons */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    border: 2px solid white; /* White border for more definition */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover and focus states for links (buttons) */
+a:hover, a:focus {
+    background-color: #eeeeee; /* Light grey for hover state */
+    color: #333; /* Maintain readable text color */
+    text-decoration: none; /* Ensure no underline */
+    box-shadow: none; /* Remove shadow for a 'pressed' effect */
+}
+
+/* Add a wrapper for content to control width and padding */
+.content-wrapper {
+    animation: fadeIn 1s ease-out;
+    max-width: 800px; /* Maximum width of the content */
+    padding: 2em; /* Padding around content */
+    margin: 0 auto; /* Center the wrapper */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for content */
+    border-radius: 10px; /* Rounded corners for the wrapper */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+.index {
+    background-image: url('index.jpg');
+}
+
+.time-machine {
+    background-image: url('time-machine.jpg');
+}
+
+.ancient-rome {
+    background-image: url('roman-empire.jpg');
+}
+
+.future-city {
+    background-image: url('future-city.jpg');
+}
+
+/* Smooth background transition for hovering over elements */
+body {
+    /* ... (existing body styles) ... */
+    transition: background 0.5s ease-in-out;
+}
+
+/* Smooth color transition for text and other elements */
+h1, p, a {
+    /* ... (existing styles) ... */
+    transition: color 0.5s ease-in-out;
+}
+
+/* Button/link transitions for hover effects */
+a {
+    /* ... (existing link/button styles) ... */
+    /* Smooth background and box-shadow transition */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+/* Hover and focus states for links (buttons) */
+a:hover, a:focus {
+    /* ... (existing hover and focus styles) ... */
+    /* Additional transitions can be added here if needed */
+}
+
+/* Animation for content appearance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+

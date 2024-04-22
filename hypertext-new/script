@@ -1,0 +1,18 @@
+function typeWriter(text, n) {
+    if (n < (text.length)) {
+        document.querySelector('.typewriter').innerHTML = text.substring(0, n+1);
+        n++;
+        // Delay of 100ms between each character
+        setTimeout(function() {
+            typeWriter(text, n)
+        }, 100);
+    }
+}
+
+// Example text to type out
+const text = 'You stumble upon your professor’s lab, finding a weird capsule-like machine.';
+
+// Start the typing effect
+window.onload = function() {
+    typeWriter(text, 0);
+};
