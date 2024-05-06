@@ -1,0 +1,100 @@
+
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif; 
+    font-weight: bold; 
+    font-style: italic; 
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f0de; 
+    color: white; 
+    overflow-x: hidden; 
+    text-align: center; 
+    transition: background 0.5s ease-in-out; 
+}
+
+h1 {
+    font-size: 2.5em;
+    color: white; 
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+p {
+    font-size: 1.5em; 
+    line-height: 1.4;
+    color: white; 
+    margin-bottom: 1em;
+}
+
+
+.highlight {
+    background-color: #eef3f4e8; 
+    color: black; 
+    padding: 0.2em 0.4em; 
+    border-radius: 5px; 
+}
+
+a {
+    display: inline-block;
+    padding: 0.8em 1.6em; 
+    margin-top: 1em;
+    background-color: #e3e2daea; 
+    color: #333;
+    font-size: 1.5em; 
+    font-family: Arial, sans-serif; 
+    font-weight: bold; 
+    text-align: center; 
+    border-radius: 0px; 
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; 
+    border: none; 
+    box-shadow: none; 
+}
+
+a:hover, a:focus {
+    background-color: #a5cfdf; 
+    color: #333;
+}
+
+
+.text-container {
+    position: relative; 
+    width: 100%; 
+    text-align: center; 
+}
+
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    max-width: 960px; 
+    height: 100vh; 
+    padding: 2em;
+    margin: auto; 
+}
+
+.index {
+    background-image: url('index.jpg');
+}
+.time-machine {
+    background-image: url('time-machine.jpg');
+}
+.ancient-rome {
+    background-image: url('roman-empire.jpg');
+}
+.future-city {
+    background-image: url('future-city.jpg');
+}
